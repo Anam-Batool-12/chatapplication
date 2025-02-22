@@ -6,7 +6,7 @@ const ProfileCard = ({ name, image, isOnline }) => {
       {/* Profile Picture */}
       <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white">
         <img
-          src={image || "https://via.placeholder.com/150"} // Default image if none provided
+          src={image || "https://via.placeholder.com/150"} 
           alt={name}
           className="w-full h-full object-cover"
         />

@@ -7,7 +7,7 @@ const Navbar = () => {
       {/* Profile Picture */}
       <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white mb-6">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIP8KbanJz9pCS4sNjYk4oYcRMwCvbldl44g&s" // Replace with actual profile image URL
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIP8KbanJz9pCS4sNjYk4oYcRMwCvbldl44g&s" 
           alt="Profile"
           className="w-full h-full object-cover"
         />

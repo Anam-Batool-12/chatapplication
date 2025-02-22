@@ -1,82 +1,4 @@
-// import React, { useState, useEffect } from "react";
-// import { Send } from "lucide-react";
-// import { io } from "socket.io-client";
-
-// const socket = io("http://localhost:5000"); // Connect to backend server
-
-// const ChatScreen = () => {
-//   const [messages, setMessages] = useState([]);
-//   const [newMessage, setNewMessage] = useState("");
-
-//   useEffect(() => {
-//     // Listen for incoming messages
-//     socket.on("receiveMessage", (messageData) => {
-//       setMessages((prevMessages) => [...prevMessages, messageData]);
-//     });
-
-//     return () => {
-//       socket.off("receiveMessage"); // Cleanup on unmount
-//     };
-//   }, []);
-
-//   // Function to send a message
-//   const sendMessage = () => {
-//     if (newMessage.trim() !== "") {
-//       const messageData = { text: newMessage, sender: "me" };
-//       socket.emit("sendMessage", messageData); // Send to server
-//       setMessages((prevMessages) => [...prevMessages, messageData]); // Update UI instantly
-//       setNewMessage("");
-//     }
-//   };
-
-//   return (
-//     <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col h-[85vh]">
-//       {/* Chat Header */}
-//       <div className="bg-gradient-to-b from-purple-700 to-gray-900 p-3 rounded-t-2xl text-white text-lg font-semibold">
-//         Chat Room
-//       </div>
-
-//       {/* Messages Container */}
-//       <div className="flex-1 overflow-y-auto p-4 space-y-3">
-//         {messages.map((msg, index) => (
-//           <div
-//             key={index}
-//             className={`p-3 rounded-lg max-w-[70%] ${
-//               msg.sender === "me"
-//                 ? "bg-purple-700 text-white self-end ml-auto"
-//                 : "bg-gray-200 text-black self-start"
-//             }`}
-//           >
-//             {msg.text}
-//           </div>
-//         ))}
-//       </div>
-
-//       {/* Input Field */}
-//       <div className="flex items-center bg-gray-200 rounded-xl p-2">
-//         <input
-//           type="text"
-//           placeholder="Type a message..."
-//           value={newMessage}
-//           onChange={(e) => setNewMessage(e.target.value)}
-//           className="flex-1 bg-transparent outline-none p-2"
-//         />
-//         <button
-//           onClick={sendMessage}
-//           className="bg-purple-700 text-white p-2 rounded-xl hover:bg-purple-800 transition"
-//         >
-//           <Send size={20} />
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ChatScreen;
-
-
-
-import React, { useState, useEffect, useRef } from "react";
+ import React, { useState, useEffect, useRef } from "react";
 import { Send, Image, Video, File, Mic, Phone, VideoIcon } from "lucide-react";
 import { io } from "socket.io-client";
 
@@ -221,3 +143,4 @@ const ChatScreen = () => {
 };
 
 export default ChatScreen;
+ 
