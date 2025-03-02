@@ -46,7 +46,7 @@ const ChatScreen = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col h-[85vh]">
+    <div className="bg-white p-6 rounded-2xl shadow-lg flex flex-col h-full">
       {/* Chat Header */}
       <div className="bg-gradient-to-b from-purple-700 to-gray-900 p-3 rounded-t-2xl text-white flex justify-between items-center">
         <span className="text-lg font-semibold">Chat Room</span>

@@ -3,7 +3,7 @@ import { Home, MessageSquare, Settings, ArrowUp } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="h-[90vh] w-20 bg-gradient-to-b from-purple-700 to-gray-900 text-white flex flex-col items-center py-6 shadow-lg rounded-full my-4">
+    <div className=" w-20 bg-gradient-to-b from-purple-700 to-gray-900 text-white flex flex-col items-center py-6 shadow-lg rounded-full my-4">
       {/* Profile Picture */}
       <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white mb-6">
         <img
@@ -36,3 +36,6 @@ const NavItem = ({ icon }) => (
 );
 
 export default Navbar;
+
+
+
